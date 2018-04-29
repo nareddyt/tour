@@ -153,7 +153,7 @@ Go's standard library provides mutual exclusion with
 We can define a block of code to be executed in mutual exclusion by surrounding it
 with a call to `Lock` and `Unlock` as shown on the `Inc` method.
 
-We can also use `defer` to ensure the mutex will be unlocked as in the `Value` method.
+We can also use `defer` to ensure the mutex will be unlocked right after the `Value` method returns.
 
 .play concurrency/mutex-counter.go
 
